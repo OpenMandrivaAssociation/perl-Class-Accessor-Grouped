@@ -17,6 +17,8 @@ Buildrequires:  perl-devel
 BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(MRO::Compat)
+BuildRequires:	perl(Class::C3)
+BuildRequires:	perl(Algorithm::C3)
 BuildArch:	    noarch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
