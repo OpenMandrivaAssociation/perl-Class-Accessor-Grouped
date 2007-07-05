@@ -14,6 +14,7 @@ Source:         http://www.cpan.org/modules/by-module/Class/%{module}-%{version}
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
+BuildRequires:	perl(Class::Inspector)
 BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(MRO::Compat)
