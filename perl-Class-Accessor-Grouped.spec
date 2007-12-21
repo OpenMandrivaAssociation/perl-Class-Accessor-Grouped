@@ -21,6 +21,7 @@ BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Class::C3)
 BuildRequires:	perl(Algorithm::C3)
 BuildArch:	    noarch
+BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This class lets you build groups of accessors that will call different getters
