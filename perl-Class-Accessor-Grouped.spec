@@ -1,6 +1,6 @@
 %define module  Class-Accessor-Grouped
 %define name    perl-%{module}
-%define version 0.07000
+%define version 0.08001
 %define release %mkrel 1
 
 Name:           %{name}
