@@ -1,16 +1,16 @@
-%define module  Class-Accessor-Grouped
-%define name    perl-%{module}
-%define version 0.08003
-%define release %mkrel 1
+%define upstream_name    Class-Accessor-Grouped
+%define upstream_version 0.09000
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Summary:        Lets you build groups of accessors
-License:        GPL or Artistic
-Group:		    Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Class/%{module}-%{version}.tar.bz2
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Lets you build groups of accessors
+License:    GPL+ or Artistic
+Group:		Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
@@ -20,15 +20,16 @@ BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Class::C3)
 BuildRequires:	perl(Algorithm::C3)
+
 BuildArch:	    noarch
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This class lets you build groups of accessors that will call different getters
 and setters.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod 644 README Changes
 
 %build
@@ -50,5 +51,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/Class
 %{_mandir}/*/*
-
-
