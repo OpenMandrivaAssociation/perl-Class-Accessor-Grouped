@@ -15,12 +15,15 @@ Source0:    http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstr
 %if %{mdkversion} < 1010
 Buildrequires:  perl-devel
 %endif
+
+BuildRequires:	perl(Algorithm::C3)
+BuildRequires:	perl(Class::XSAccessor)
+BuildRequires:	perl(Class::C3)
 BuildRequires:	perl(Class::Inspector)
-BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(MRO::Compat)
-BuildRequires:	perl(Class::C3)
-BuildRequires:	perl(Algorithm::C3)
+BuildRequires:	perl(Sub::Identify)
+BuildRequires:	perl(Sub::Name)
 
 BuildArch:	    noarch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
