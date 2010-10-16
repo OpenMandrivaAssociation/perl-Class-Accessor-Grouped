@@ -24,7 +24,7 @@ BuildRequires:	perl(Module::AutoInstall)
 BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Sub::Identify)
 BuildRequires:	perl(Sub::Name)
-
+BuildRequires:	perl(Test::Exception)
 BuildArch:	    noarch
 BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
