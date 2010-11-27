@@ -1,5 +1,5 @@
 %define upstream_name    Class-Accessor-Grouped
-%define upstream_version 0.09008
+%define upstream_version 0.09009
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
