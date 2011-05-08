@@ -1,9 +1,9 @@
 %define upstream_name    Class-Accessor-Grouped
-%define upstream_version 0.10002
+%define upstream_version 0.10003
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 Epoch:      1
 
 Summary:    Lets you build groups of accessors
