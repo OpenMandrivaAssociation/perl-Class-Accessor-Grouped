@@ -23,6 +23,7 @@ BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Sub::Identify)
 BuildRequires:	perl(Sub::Name)
 BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(Module::Runtime)
 
 %description
 This class lets you build groups of accessors that will call different getters
