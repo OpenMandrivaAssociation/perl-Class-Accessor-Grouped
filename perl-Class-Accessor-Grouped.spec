@@ -1,12 +1,12 @@
 %define upstream_name    Class-Accessor-Grouped
-%define upstream_version 0.10010
+%define upstream_version 0.10012
 
 Summary:	Lets you build groups of accessors
 
 Name:		perl-%{upstream_name}
 Epoch:		1
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -47,5 +47,3 @@ make test
 %doc Changes README
 %{perl_vendorlib}/Class
 %{_mandir}/man3/*
-
-
