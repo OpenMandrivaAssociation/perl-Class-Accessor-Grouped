@@ -1,16 +1,16 @@
 %define upstream_name    Class-Accessor-Grouped
-%define upstream_version 0.10012
+%define upstream_version 0.10013_01
 
 Summary:	Lets you build groups of accessors
 
 Name:		perl-%{upstream_name}
 Epoch:		1
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Class-Accessor-Grouped-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Algorithm::C3)
