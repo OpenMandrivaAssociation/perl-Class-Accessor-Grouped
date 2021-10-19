@@ -1,12 +1,11 @@
-%define upstream_name    Class-Accessor-Grouped
+%define upstream_name Class-Accessor-Grouped
 %define upstream_version 0.10013_01
 
 Summary:	Lets you build groups of accessors
-
 Name:		perl-%{upstream_name}
 Epoch:		1
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -30,20 +29,20 @@ This class lets you build groups of accessors that will call different getters
 and setters.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -n %{upstream_name}-%{upstream_version} -p1
 chmod 644 README Changes
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes README
 %{perl_vendorlib}/Class
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
