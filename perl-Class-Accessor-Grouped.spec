@@ -8,7 +8,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Class-Accessor-Grouped-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
